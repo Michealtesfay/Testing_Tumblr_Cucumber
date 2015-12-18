@@ -6,4 +6,6 @@ Feature: Posting a post on tumblr
   And I enter "Testing tumblr using cucumber and watir" into the body field
   And I select post
   And I go to my home page
-  
+  Then I should see my post on the blog with the correct title and body
+  And I should be able to delete the the post I made
+ 
